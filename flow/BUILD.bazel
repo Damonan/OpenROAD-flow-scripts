@@ -14,6 +14,13 @@ MAKEFILE_SHARED = [
     "scripts/*.mk",
 ]
 
+# export the compiled openroad binary
+filegroup(
+	name = "openroad_bin",
+	srcs = ["openroad"],
+	visibility = ["//visibility:public"],
+)
+
 # makefile and scripts used by script/synth.sh steps
 filegroup(
     name = "makefile_yosys",
@@ -40,6 +47,13 @@ filegroup(
     ]) + [
         "//flow/util:makefile",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# common files for external PDKs
+filegroup(
+    name = "common",
+    srcs = ["platforms/common/lcu_kogge_stone.v"],
     visibility = ["//visibility:public"],
 )
 
