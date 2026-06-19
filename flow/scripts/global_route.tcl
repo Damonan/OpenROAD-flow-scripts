@@ -22,6 +22,8 @@ proc global_route_helper { } {
   append_env_var additional_args dbProcessNode -db_process_node 1
   append_env_var additional_args VIA_IN_PIN_MIN_LAYER -via_in_pin_bottom_layer 1
   append_env_var additional_args VIA_IN_PIN_MAX_LAYER -via_in_pin_top_layer 1
+  append_env_var additional_args VIA_MAX_CUT -via_max_cut 1
+  append_env_var additional_args VIA_CANDIDATE_PER_CUT -via_candidate_per_cut 1
 
   log_cmd pin_access {*}$additional_args
 
