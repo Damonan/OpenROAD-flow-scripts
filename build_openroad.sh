@@ -15,8 +15,8 @@ cd "$DIR"
 # Defaults variable values
 NICE=""
 
-OPENROAD_APP_REMOTE="origin"
-OPENROAD_APP_BRANCH="master"
+OPENROAD_APP_REMOTE="myfork"
+OPENROAD_APP_BRANCH="add-multicut-basic-support"
 
 INSTALL_PATH="$(pwd)/tools/install"
 
@@ -29,7 +29,7 @@ OPENROAD_APP_ARGS=""
 DOCKER_OS_NAME="ubuntu22.04"
 PROC=-1
 
-WITH_VERIFIC=0
+WITH_VERIFIC=""
 VERIFIC_SRC=""
 VERIFIC_COMPONENTS='database util containers pct hier_tree verilog'
 VERIFIC_ARGS=" VERIFIC_COMPONENTS='${VERIFIC_COMPONENTS}'"
