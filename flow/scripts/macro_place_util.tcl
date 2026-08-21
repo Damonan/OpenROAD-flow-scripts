@@ -60,10 +60,6 @@ if { [find_macros] != "" } {
 
   append additional_rtlmp_args " -target_util [place_density_with_lb_addon]"
 
-  if { $::env(RTLMP_DATA_FLOW_DRIVEN) } {
-    append additional_rtlmp_args " -data_flow_driven"
-  }
-
   set all_args $additional_rtlmp_args
 
   if { [env_var_exists_and_non_empty RTLMP_ARGS] } {
@@ -71,9 +67,6 @@ if { [find_macros] != "" } {
   }
 
   log_cmd rtl_macro_placer {*}$all_args
-
-  source $::env(SCRIPTS_DIR)/placement_blockages.tcl
-  block_channels $blockage_width
 } else {
   puts "No macros found: Skipping macro_placement"
 }
