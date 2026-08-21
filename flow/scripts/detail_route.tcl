@@ -20,6 +20,8 @@ append_env_var additional_args OR_SEED -or_seed 1
 append_env_var additional_args OR_K -or_k 1
 append_env_var additional_args VIA_IN_PIN_MIN_LAYER -via_in_pin_bottom_layer 1
 append_env_var additional_args VIA_IN_PIN_MAX_LAYER -via_in_pin_top_layer 1
+append_env_var additional_args VIA_MAX_CUT -via_max_cut 1
+append_env_var additional_args VIA_CANDIDATE_PER_CUT -via_candidate_per_cut 1
 append_env_var additional_args DISABLE_VIA_GEN -disable_via_gen 0
 append_env_var additional_args REPAIR_PDN_VIA_LAYER -repair_pdn_vias 1
 append_env_var additional_args DETAILED_ROUTE_END_ITERATION -droute_end_iter 1
