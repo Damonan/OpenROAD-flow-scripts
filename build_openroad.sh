@@ -15,8 +15,8 @@ cd "$DIR"
 # Defaults variable values
 NICE=""
 
-OPENROAD_APP_REMOTE="myfork"
-OPENROAD_APP_BRANCH="add-multicut-basic-support"
+OPENROAD_APP_REMOTE="origin"
+OPENROAD_APP_BRANCH="master"
 
 INSTALL_PATH="$(pwd)/tools/install"
 

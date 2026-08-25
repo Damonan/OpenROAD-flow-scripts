@@ -112,7 +112,7 @@ _install_EL8_EL9_Packages() {
     fi
 
     # EL8 and EL9 use `dnf`, instead of `yum`
-    dnf -y update
+    #dnf -y update
     dnf -y install \
         time \
         readline \
