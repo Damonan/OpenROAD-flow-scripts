@@ -4,10 +4,3 @@ sh_binary(
     name = "install_for_bazel",
     srcs = ["bazel/install.sh"],
 )
-
-# export the compiled openroad binary
-filegroup(
-	name = "openroad_bin",
-	srcs = ["tools/OpenROAD/bazel-bin/openroad"],
-	visibility = ["//visibility:public"],
-)
